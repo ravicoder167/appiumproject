@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Amazon" duration-ms="0" started-at="2019-02-01T17:01:14Z" finished-at="2019-02-01T17:01:14Z">
+    <groups>
+    </groups>
+  </suite> <!-- Amazon -->
+</testng-results>

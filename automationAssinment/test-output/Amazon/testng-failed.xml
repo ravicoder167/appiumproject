@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" name="Failed suite [Amazon]" parallel="tests">
+  <parameter name="appPackage" value="com.amazon.mShop.android.shopping"/>
+  <parameter name="appActivity" value="com.amazon.mShop.home.HomeActivity"/>
+  <parameter name="browserName" value=""/>
+  <parameter name="udid" value="4550455830383098"/>
+  <parameter name="deviceName" value="S9"/>
+  <parameter name="platform" value="ANDROID"/>
+  <parameter name="URL" value="http://127.0.0.1:4723/wd/hub"/>
+  <listeners>
+    <listener class-name="com.tcs.rbc.appium.poc.automation.report.TestListener"/>
+    <listener class-name="com.tcs.rbc.appium.poc.automation.report.AnnotationTransformer"/>
+  </listeners>
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="appPackage" value="com.amazon.mShop.android.shopping"/>
+    <parameter name="appActivity" value="com.amazon.mShop.home.HomeActivity"/>
+    <parameter name="browserName" value=""/>
+    <parameter name="udid" value="4550455830383098"/>
+    <parameter name="deviceName" value="S9"/>
+    <parameter name="platform" value="ANDROID"/>
+    <parameter name="URL" value="http://127.0.0.1:4723/wd/hub"/>
+    <classes>
+      <class name="com.tcs.rbc.appium.poc.automation.testcases.AmazonTestCase">
+        <methods>
+          <include name="createAppiumDriver"/>
+          <include name="testOnStart"/>
+          <include name="testOnFinish"/>
+          <include name="sampeTest"/>
+        </methods>
+      </class> <!-- com.tcs.rbc.appium.poc.automation.testcases.AmazonTestCase -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Amazon] -->
